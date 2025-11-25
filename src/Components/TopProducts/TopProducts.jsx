@@ -3,8 +3,9 @@ import Img1 from "../../assets/shirt.png";
 import Img2 from "../../assets/shirt2.webp";
 import Img3 from "../../assets/shirt3.jpg";
 import Img4 from "../../assets/Shoes.webp";
-import Img5 from "../../assets/Men's watch.webp";
-import Img6 from "../../assets/Mens Kurtas Pajama set.jpg"; 
+import Img5 from "../../assets/mens-watch.webp";
+import Img6 from "../../assets/mens-kurta-pajama.jpg";
+
 
 import { FaStar } from "react-icons/fa";
 
