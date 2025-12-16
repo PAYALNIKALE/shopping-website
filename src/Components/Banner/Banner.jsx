@@ -8,7 +8,7 @@ import { FaSalesforce } from "react-icons/fa";
 
 const Banner = () => {
   return (
-    <div className="min-h-[850px]  flex justify-center 
+    <div className="min-h-[850px] flex justify-center 
     items-center py-2 sm:py-0 pt-10">
       <div className="container">
         <div data-aos="zoom-in">
@@ -30,34 +30,37 @@ const Banner = () => {
             officia labore enim neque quam! Mollitia incidunt vel, dignissimos
             dicta cumque provident.
           </p>
-          <div className="flex flex-row gap-20 ">
-            <div data-aos="fade-down" className="flex items-center gap-4">
-              <MdProductionQuantityLimits className="text-4xl h-12 w-12 shadow-sm p-4 
+
+
+
+          <div className="pt-4">
+            <div data-aos="fade-up" className="flex items-center gap-4">
+              <MdProductionQuantityLimits className="text-4xl h-12 w-12 shadow-sm p-3
               rounded-full bg-orange-100 dark:bg-purple-800" />
               <p>Quality Products</p>
             </div>
 
-          <div className="flex flex-row gap-20 ">
+          <div className="pt-5">
             <div data-aos="fade-up" className="flex items-center gap-4">
-              <TbTruckDelivery className="text-4xl h-12 w-12 shadow-sm p-4 
-              rounded-full bg-orange-100 dark:bg-pink-500" />
+              <TbTruckDelivery className="text-4xl h-12 w-12 shadow-sm p-3 
+             rounded-full bg-orange-100 dark:bg-pink-600" />
               <p>Fast Delivery</p>
             </div>
 
-          <div className="flex flex-row gap-20 ">
-            <div data-aos="fade-down" className="flex items-center gap-4">
-              <GiTakeMyMoney className="text-4xl h-12 w-12 shadow-sm p-4 
+          <div className="pt-5">
+            <div data-aos="fade-up" className="flex items-center gap-4">
+              <GiTakeMyMoney className="text-4xl h-12 w-12 shadow-sm p-3 
               rounded-full bg-green-100 dark:bg-red-600" />
               <p>Easy Payment Method</p>
             </div>
 
-          <div className="flex flex-row gap-20 ">
-          <div className="flex flex-row py-5 gap-20 ">
+          <div className="pt-5">
+          {/* <div className="py-5 gap-20 "> */}
             <div data-aos="fade-up" className="flex items-center gap-4">
-              <FaSalesforce className="text-4xl h-12 w-12 shadow-sm p-4 
-              rounded-full bg-green-100  dark:bg-yellow-400" />
+              <FaSalesforce className="text-4xl h-12 w-12 shadow-sm p-3 
+              rounded-full bg-green-100  dark:bg-yellow-600" />
               <p>Get Offers</p>
-          </div>
+          {/* </div> */}
           </div>
           </div>
           </div>
@@ -70,17 +73,6 @@ const Banner = () => {
 };
 
 export default Banner;
-
-
-
-
-
-
-
-
-
-
-
 
 
 
