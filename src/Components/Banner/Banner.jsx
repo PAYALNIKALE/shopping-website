@@ -8,7 +8,7 @@ import { FaSalesforce } from "react-icons/fa";
 
 const Banner = () => {
   return (
-    <div className="min-h-[850px] flex justify-center 
+    <div className="min-h-[850px]   flex justify-center 
     items-center py-2 sm:py-0 pt-10">
       <div className="container">
         <div data-aos="zoom-in">

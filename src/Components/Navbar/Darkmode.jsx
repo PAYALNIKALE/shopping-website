@@ -136,7 +136,8 @@
 
 
 import React, { useEffect, useState } from 'react';
-import LightButton from "../../assets/LightButtton.jpg";
+// import LightButton from "../../assets/LightButtton.jpg";
+import LightButton from "../../assets/LightButtton.png"
 import DarkButton from "../../assets/DarkButton.png";
 
 const Darkmode = () => {
@@ -164,7 +165,7 @@ const Darkmode = () => {
       ${
         theme === "light"
           ? "brightness-110" // 🌞 BRIGHT MODE ACTIVATED
-          : "brightness-75"  // 🌙 DIM DARK MODE
+          : "brightness-80"  // 🌙 DIM DARK MODE
       }`}
     >
       {/* Light Button */}
@@ -172,7 +173,8 @@ const Darkmode = () => {
         src={LightButton}
         alt="Light Button"
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-        className={`w-12 cursor-pointer transition-all duration-300 absolute right-0 z-10
+        className={`w-15 cursor-pointer transition-all 
+          duration-300 absolute right-0 z-10 
         ${theme === "dark" ? "opacity-0" : "opacity-100"}`}
       />
 

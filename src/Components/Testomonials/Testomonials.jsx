@@ -1,8 +1,6 @@
 import React from 'react' 
 import Slider from 'react-slick';
-// import Hero from "./Components/Hero/Hero";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+
 
 const TestomonialsData = [
  {
@@ -52,32 +50,38 @@ const Testomonials = () => {
     pauseOnFocus: true,
     responsive: [
         {
-        breakpoint: 10000,
-        settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-        }
-     },
-     {
-       breakpoint: 1024,
+        // breakpoint: 10000,
+        breakpoint: 1024,
         settings: {
             slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true,
-        } 
-     },
-     {
-        breakpoint: 640,
-        settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
+            // slidesToShow: 3,
+            // slidesToScroll: 1,
+            // infinite: true,
         }
      },
-    ]
+     {
+    //    breakpoint: 1024,
+        breakpoint: 640,
+        settings: {
+            slidesToShow: 1,
+            // slidesToShow: 2,
+            // slidesToScroll: 1,
+            // infinite: true,
+        }, 
+     },
+    //  {
+    //     breakpoint: 640,
+    //     settings: {
+    //         slidesToShow: 3,
+    //         slidesToScroll: 1,
+    //     }
+    //  },
+    ],
     };
   return (
-    <div className="py-10 mb-10 ">
+    <div className="py-10 mb-10 cursor-pointer
+    bg-gray-100 dark:bg-slate-900
+    duration-300">
         <div className="container">
             <div className="text-center mb-10 max-w-[600px]
             mx-auto">
@@ -97,22 +101,21 @@ const Testomonials = () => {
             <div data-aos="zoom-in">
                 <Slider {...settings}>
                     {TestomonialsData.map((data) => (
-                        <div className="my-9 px-60">
+                        <div className="my-5 px-4 sm:px-6 md:px-9">
                             <div key={data.id} 
                              className="gap-4 shadow-gray-50
-                             py-8 px-6 rounded-xl 
+                             py-8 px-6 rounded-lg 
                              dark:bg-slate-600 bg-primary/10 relative">
                                 <div className="mb-4 py-5 px-10
-                                flex justify-center
-                                items-center rounded-full">
+                                flex justify-center items-center rounded-full">
                                     <img src={data.img} 
                                     alt="" 
-                                    className="rounded-full w-50 h-50" />
+                                    className="rounded-full w-30 h-30" />
                                 </div>
                                 <div className="flex flex-col items-center gap-4">
                                     <div className="space-y-3">
                                         <p className="text-xs
-                                        dark:text-slate-300 text-gray-600">
+                                        dark:text-slate-200 text-gray-700">
                                             {data.text}
                                         </p>
                                         <h1 className="text-xl font-bold

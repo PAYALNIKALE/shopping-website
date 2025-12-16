@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Login from "./Components/Login/Login";
 import Navbar from "./Components/Navbar/Navbar";
 import Products from "./Components/Products/Products";
 import TopProducts from "./Components/TopProducts/TopProducts";
@@ -31,9 +32,9 @@ function App() {
       delay: 100,
     });
   }, []);
-
-  return (
+return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
+      <Login />
       <Navbar handleOrderPopup={handleOrderPopup} />
       <Hero handleOrderPopup={handleOrderPopup} />
       <Products />

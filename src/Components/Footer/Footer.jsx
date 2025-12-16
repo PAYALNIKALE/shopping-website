@@ -53,8 +53,8 @@ const FooterLink = [
         link: "/#"
     },
      {
-        title: "Wbsite builder and Web design articles",
-        link: "/Wbsite builder and Web design articles"
+        title: "Website builder and Web design articles",
+        link: "/Website builder and Web design articles"
     },
      {
         title: "Learning Center",
