@@ -43,17 +43,17 @@ function Hero({ handleOrderPopup }) {
 
   return (
     <div
-      className="relative overflow-hidden min-h-[555px] sm:min-h-[700px]
+      className="relative overflow-hidden sm:min-h-[700px]
       bg-gray-400 flex justify-center items-center dark:bg-slate-950
        dark:text-white duration-300"
     >
       {/* Background Shape */}
       <div
         className="h-[700px] w-[700px] bg-primary/40 
-        absolute top-1/2 right-5 rounded-3xl rotate-45-z-10 "
+        absolute top-1/2 right-5 rounded-3xl rotate-45-z-10 py-10 "
       ></div>
 
-      <div className="container pb-8 sm:pb-0">
+      <div className="container pb-8 sm:pb-0 pr-10">
         <Slider {...settings}>
           {ImageList.map((data) => (
             <div key={data.id}>
@@ -61,13 +61,13 @@ function Hero({ handleOrderPopup }) {
 
                 {/* Left Content */}
                 <div
-                  className="flex flex-col justify-center gap-6 
-                   text-center sm:text-left order-2 sm:order-1 relative z-10 py-10"
+                  className="flex flex-col justify-center gap-2  
+                   text-center sm:text-left order-2 sm:order-1 relative z-10"
                 >
                   <h1
                     data-aos="zoom-out"
                     data-aos-duration="500"
-                    className="text-5xl sm:text-6xl lg:text-7xl font-bold py-10"
+                    className="text-5xl sm:text-6xl lg:text-7xl font-bold"
                   >
                     {data.title}
                   </h1>
@@ -118,3 +118,4 @@ function Hero({ handleOrderPopup }) {
 }
 
 export default Hero;
+
